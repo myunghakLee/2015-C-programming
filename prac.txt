@@ -1,0 +1,30 @@
+#include<iostream>
+
+template <typename T>
+
+#define square(x) (x*x)
+
+inline T SQUARE(T x)
+{
+	return x*x;
+}
+
+void main ()
+{	
+	int num[2] ={10,55};
+	int pnum=15;
+
+	int *const ptr1 = num;
+	
+	std::cout<<*ptr1<<std::endl;
+	
+	std::cout<<num[0]<<std::endl;
+
+	*ptr1++;
+	std::cout<<*ptr1<<std::endl;
+	
+	std::cout<<num[0]<<std::endl;
+	
+	
+
+}
